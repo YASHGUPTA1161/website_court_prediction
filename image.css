@@ -1,0 +1,17 @@
+.image-container {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6886531.jpg&f=1&nofb=1&ipt=e1b4e132480ffb7696304c132dc7bdbe3a058f028501c4819311f87da94ebc0f&ipo=images");
+  float: right;
+  margin-top: -20px;
+  background-image: top center;
+  /* background-size: 90%; */
+  width: 700px;
+  height: 350px;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  /* top: 50px; */
+  /* left: 50px; */
+  /* background-position:center; */
+  /* width: 600px; */
+  /* height: 50px; */
+  /* float: right; */
+}

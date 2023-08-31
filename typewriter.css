@@ -1,0 +1,25 @@
+
+.typewriter h1 {
+    color: gray;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid black;
+    animation: blink-caret .5s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.main {
+    position: relative;
+    padding-top: 0px;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}

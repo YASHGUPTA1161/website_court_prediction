@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="switch.css">
+        <link rel="stylesheet" href="typewriter.css">
+        <link rel="stylesheet" href="/web development/html/image.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <h4><title>COURT VISION</title></h4>
+    </head>
+    
+    <body>
+        <header>
+            <h1>COURT VISION</h1>
+            <nav class="nav">
+                <a class="menu-btn" href="#">Home</a>
+                <a class="menu-btn" href="#">Info</a>
+                <a class="menu-btn" href="#">Leagues</a>
+                <a class="menu-btn" href="#">The Court</a>
+                <a class="menu-btn" href="#">Notifications</a>
+                <a class="menu-btn" href="#">Login/signUp</a>
+                <label class="switch">
+                    <input type="checkbox" onclick="toggleMode()">
+                    <span class="slider round"></span>
+                </label>
+                
+                  <script>
+                    function toggleMode() {
+                      if (document.body.style.backgroundColor === "black") {
+                        document.body.style.backgroundColor = "white";
+                        document.body.style.color = "black";
+                      } else {
+                        document.body.style.backgroundColor = "black";
+                        document.body.style.color = "white";
+                    }
+                    }
+                </script>
+            </label>
+        </nav>
+        <hr>
+    </header>
+    <div>
+        <i class="fa fa-home fa-2x"></i>
+        <i class="fa fa-search fa-2x" ></i>
+        <hr style="width: 100%; ">
+    </div>
+    <main>
+        <head>
+            <style>
+                .image-container {
+                    float: right;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="image-container">
+            </div>
+        </body>
+        <head>
+            <h2 style="display:inline; padding-left: 30px;">Welcome To </h2><h2 style="display:inline;" class="court">COURT PREDICTION</h2>
+            <!-- /* Add a typewriter effect */ -->
+            <div class="main">
+                <div class="left">
+                    <div class="typewriter">
+                        <h1>Predict <span id="animated-text" style="color: purple;"></span></h1>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const texts = ['Court Solutions', 'Court Strategies', ' Court Skills', 'Court Results'];
+                let count = 0;
+                let index = 0;
+                let currentText = '';
+                let letter = '';
+                
+                (function type() {
+                    if (count === texts.length) {
+                        count = 0;
+                    }
+                    currentText = texts[count];
+                    letter = currentText.slice(0, ++index);
+                    
+                    document.querySelector('#animated-text').textContent = letter;
+                    if (letter.length === currentText.length) {
+                        count++;
+                        index = 0;
+                        setTimeout(type, 1000);
+                    } else {
+                        setTimeout(type, 50);
+                    }
+                }());
+            </script>
+            <div style="width: 45%; margin-top: 4em;">
+                <p style="padding-left: 30px;">
+                    Court Prediction is a website that provides users with accurate predictions for court cases. Our advanced algorithms analyze past cases and legal precedents to provide reliable predictions. With Court Prediction, users can make informed decisions and better prepare for their court cases.
+                </p>
+                <button class="login-button">Join Now</button>
+                <button class="blog-button">Explore Blog</button>
+              </div>
+              <!-- /* Add a typewriter effect */ -->
+              <section>
+            <h2 class="cases">CASES</h2>
+            <!-- Flickity HTML init -->
+            <div class="carousel"
+            data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell iframe-container"><video src="#" width="35%" height="70%" poster="/web development/material/_a4d5b644-03a6-473e-8726-d1438bc5769f.jpg"></video>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="carousel-cell iframe-container"><video src="#" width="35%" height="76%" poster="/web development/material/_c1dd2f84-924c-4c68-ad70-f87b2c775267.jpg"></video>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="carousel-cell iframe-container"><video src="#" width="35%" height="76%" poster="/web development/material/_c49a9f0b-a147-4884-91af-98b8beb81093.jpg"></video>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+            </div>
+    </section>
+    <section>
+        <h1 class="testimonial">Testimonial</h1>
+          <div class="testimonials-container">
+            <div class="testimonial-block">
+              <p>"I don't have words to thank this man, I'm really grateful to have this channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and can put your time into his content. I can assure you that it'll be worth it."</p>
+              <p>- Mohit Kumar, Web Developer</p>
+            </div>
+            <div class="testimonial-block">
+                <p>"I don't have words to thank this man, I'm really grateful to have this channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and can put your time into his content. I can assure you that it'll be worth it."</p>
+                <p>- Mohit Kumar, Web Developer</p>
+              <!-- Add another testimonial here -->
+            </div>
+          </div>
+    </section>
+    </head>
+    <section class="report">
+        <h2>Report</h2>
+        <a target="_blank" class="eframe-container" href="/web development/web development/240702.pdf"><img src="/web development/material/_5cbe00bd-c807-4dba-b4bb-7d4135c70d28.jpg" alt="" width="20%" height="75%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target="_blank" class="eframe-container" href="/web development/web development/240702.pdf"><img src="/web development/material/_a4d5b644-03a6-473e-8726-d1438bc5769f.jpg" alt="" width="20%" height="75%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a target="_blank" class="eframe-container" href="/web development/web development/240702.pdf"><img src="/web development/material/_bf3efcde-0cae-4eb5-bb6a-54f0ba92a567.jpg" alt="" width="20%" height="75%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </section>
+    <section>
+        <h2>Contact Info</h2>
+        <div class="sm-handle">
+        <a href="#" style="background-color: red;"><b><i href="#" class="fa fa-youtube"></i> youtube</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#" style="background-color: pink;"><b><i href="#" class="fa fa-instagram"></i> instagram</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://gmail" target="_blank"><b>gmail</b></a>
+        </div>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis.</h4>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam, fugit saepe quia sit aliquid obcaecati beatae assumenda id illo dolores. Suscipit repellat quo sit qui nulla provident eius voluptatum?</h5>
+    </section>
+
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact us</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Report</a>
+        <a class="copyright" href="#">&copy; 2023 | COURT VISION</a>
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
